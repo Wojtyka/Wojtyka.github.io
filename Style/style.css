@@ -1,7 +1,39 @@
+body{
+    background-image: url("../images/background.jpg")
+}
 #canvas{
     display:block;
     margin: 100px auto;
 }
 #btnName{
     margin: 100px auto;
+}
+
+/*menu instellen*/
+ul {
+    list-style-stype: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: black;
+}
+li{
+    float:left;
+}
+
+li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a.active{
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active){
+    background-color: #555;
+    color:white;
 }
